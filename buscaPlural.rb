@@ -1,5 +1,7 @@
-def plural(palavra)
-    "#{palavra}s"
+telefone_celular = "999999999"
+class String 
+    def plural
+        "#{self}s"
+    end
 end
-puts plural("caneta") # canetas
-puts plural("carro")
+puts "Hello World".plural  
