@@ -1,4 +1,3 @@
-telefone_celular = "999999999"
 class String 
     def plural
         "#{self}s"
