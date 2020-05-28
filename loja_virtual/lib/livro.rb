@@ -14,11 +14,10 @@ class Livro
         "Autor(a): #{@autor}, ISBN: #{@isbn}, Páginas: #{@numero_de_paginas}"
     end
 =begin 
-#colocar em anotações. Essa é uma forma de leitura escrita manual. Trocada por ``attr_writer :var ´´ e por ``attr_reader :var´´ ou ``attr_accessor´´
+Essa é uma forma de leitura escrita manual. Trocada por ``attr_writer :var ´´ e por ``attr_reader :var´´ ou ``attr_accessor´´
     def preco
         @preco
     end
-
     def preco=(preco) #método para alterar valor da variável de instância.
         @preco = preco
     end
