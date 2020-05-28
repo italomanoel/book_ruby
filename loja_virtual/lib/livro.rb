@@ -1,5 +1,7 @@
-# enconding: utf-8
+# coding: utf-8
 class Livro
+    attr_writer :preco
+    attr_reader :preco
     #o último parâmetro deve estar vazio.
     def initialize(autor, isbn = "1", numero_de_paginas, preco)
         @autor = autor
@@ -12,12 +14,14 @@ class Livro
     def to_s
         "Autor(a): #{@autor}, ISBN: #{@isbn}, Páginas: #{@numero_de_paginas}"
     end
-
+=begin 
+#colocar em anotações. Essa é uma forma de leitura escrita. Trocada por ``attr_writer :var ´´ e por ``attr_reader :var´´
     def preco
         @preco
     end
 
-    def preco=(preco)
+    def preco=(preco) #método para alterar valor da variável de instância.
         @preco = preco
     end
+=end
 end
