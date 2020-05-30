@@ -1,4 +1,4 @@
-#livro: Ruby Aprendendo a programar... 56
+#livro: Ruby Aprendendo a programar... 4.2 63 49
 
 Quandoa linguagem permite que o tipo da variável possa ser alterado durante a execução do programa, dizemos que ela tem tipagem dinâmica. 
 
@@ -18,6 +18,8 @@ Essa é uma forma de leitura escrita manual:
     def variavel=(variavel) #método para alterar valor da variável de instância.
         @variavel = variavel
     end
-*. Trocada por **attr_writer :var** e por **attr_reader :var** ou **attr_accessor**
+*. Trocada por **attr_writer :var** e por **attr_reader :nome_var** ou **attr_accessor :nome_var**
 
 O *instance_variable_get* e *instance_variable_set* é uma forma de burlar as características de métodos privados, mas criam um problema, no momento em que o código fica obsoleto, ele não reportará erro (caso não tenha testes de unidade que validem o comportamento da aplicação). 
+
+Se pode declarar um array utilizando o *%w{}* e *%W{String #{var}}* que permite a interpolação de valores nas palavras no array. Assim não o espaços tomam lugar da vírgula na separação, na declaração comum *exemplo = [1,2,3]*, *exemplo_com = %w{olá mundo}*, *exemplo_com_interpolacao = %W{olá #{}}*.
