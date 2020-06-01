@@ -20,6 +20,15 @@ Essa é uma forma de leitura escrita manual:
     end
 *. Trocada por **attr_writer :var** e por **attr_reader :nome_var** ou **attr_accessor :nome_var**
 
-O *instance_variable_get* e *instance_variable_set* é uma forma de burlar as características de métodos privados, mas criam um problema, no momento em que o código fica obsoleto, ele não reportará erro (caso não tenha testes de unidade que validem o comportamento da aplicação). 
+O *instance_variable_get* e *instance_variable_set* é uma forma de burlar as características de métodos privados, mas criam um problema, no momento em que o código fica obsoleto, ele não reportará erro (caso não tenha testes de unidade que validem o comportamento da aplicação). exemplos
+/_________________________________
+#usando o instance_variable_get e set, burlando método privado, não faça! Apenas exemplo
+uma_var = Classe.new("nome", "data", 247, 60.9)
+puts uma_var.instance_variable_get "@exemplo_var"
 
-Se pode declarar um array utilizando o *%w{}* e *%W{String #{var}}* que permite a interpolação de valores nas palavras no array. Assim não o espaços tomam lugar da vírgula na separação, na declaração comum *exemplo = [1,2,3]*, *exemplo_com = %w{olá mundo}*, *exemplo_com_interpolacao = %W{olá #{}}*.
+uma_var.instance_variable_set "@exemplo_var", 75.5
+puts uma_var.exemplo_var # teste uma_var.instance_variable_get "@exemplo_var"
+_________________________________/
+
+Se pode declarar um array utilizando o *%w{}* e *%W{String #{var}}* que permite a interpolação de valores nas palavras no array. Assim não o espaços tomam lugar da vírgula na separação, na declaração comum *exemplo = [1,2,3]*, *exemplo_com = %w{olá mundo}*, **exemplo_com_interpolacao = %W{olá #{}}**.
+

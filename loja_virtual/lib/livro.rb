@@ -1,8 +1,7 @@
 # coding: utf-8
 class Livro
     attr_accessor :preco  # substitui o attr_writer :preco   attr_reader :preco
-    #o último parâmetro deve estar vazio.
-    def initialize(autor, isbn = "1", numero_de_paginas, preco)
+    def initialize(autor, isbn = "1", numero_de_paginas, preco) #o último parâmetro deve estar vazio.
         @autor = autor
         @isbn = isbn
         @numero_de_paginas = numero_de_paginas
