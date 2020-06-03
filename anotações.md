@@ -1,4 +1,4 @@
-#livro: Ruby Aprendendo a programar... 4.2 63 49
+#livro: Ruby Aprendendo a programar...
 
 Quandoa linguagem permite que o tipo da variável possa ser alterado durante a execução do programa, dizemos que ela tem tipagem dinâmica. 
 
@@ -31,4 +31,8 @@ puts uma_var.exemplo_var # teste uma_var.instance_variable_get "@exemplo_var"
 _________________________________/
 
 Se pode declarar um array utilizando o *%w{}* e *%W{String #{var}}* que permite a interpolação de valores nas palavras no array. Assim não o espaços tomam lugar da vírgula na separação, na declaração comum *exemplo = [1,2,3]*, *exemplo_com = %w{olá mundo}*, **exemplo_com_interpolacao = %W{olá #{}}**.
+
+page 66 4.4 hash
+
+
 

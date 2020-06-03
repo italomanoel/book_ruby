@@ -9,13 +9,15 @@ web_design_reponsivo = Livro.new("Tar Zem", "21312", 189, 67.9)
 
 biblioteca.adiciona teste_e_design #recebendo no array
 biblioteca.adiciona web_design_reponsivo #recebendo no array
-puts biblioteca.livros
+ for livro in biblioteca.livros do
+    p livro.preco
+ end
 
+=begin
 # puts teste_e_design.preco
 # teste_e_design.preco = 79.9
 # puts teste_e_design.preco
 
-=begin
 #usando o instance_variable_get e set, burlando método privado, não faça! Apenas exemplo
 teste_e_design = Livro.new("Mauricio Li", "0887", 247, 60.9)
 puts teste_e_design.instance_variable_get "@preco"
