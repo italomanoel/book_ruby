@@ -10,7 +10,7 @@ web_design_reponsivo = Livro.new("Tar Zem", "21312", 189, 67.9)
 biblioteca.adiciona teste_e_design #recebendo no array
 biblioteca.adiciona web_design_reponsivo #recebendo no array
  for livro in biblioteca.livros do
-    p livro.preco
+    p livro.valor
  end
 
 =begin
