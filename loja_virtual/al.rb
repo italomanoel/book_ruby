@@ -4,14 +4,20 @@ require File.expand_path("lib/loja_virtual")
 # require File.expand_path("lib/biblioteca")
 
 biblioteca = Biblioteca.new
-teste_e_design = Livro.new("Mauricio Li", "0887", 247, 70.5)
-web_design_reponsivo = Livro.new("Tar Zem", "21312", 189, 67.9)
+teste_e_design = Livro.new("Mauricio Li", "123454", 247, 70.5, :testes)
+web_design_reponsivo = Livro.new("Tarcio Zemel", "452565", 189, 67.9, :web_design)
+jsf_e_jpa = Livro.new("Gilliard Cordeiro", "543465", 234, 64.9, :frameworks_mvc)
 
-biblioteca.adiciona teste_e_design #recebendo no array
-biblioteca.adiciona web_design_reponsivo #recebendo no array
- for livro in biblioteca.livros do
-    p livro.valor
- end
+# biblioteca.adiciona teste_e_design 
+# biblioteca.adiciona web_design_reponsivo 
+
+hash = {}
+hash[:testes] = [[teste_e_design], [jsf_e_jpa]]
+hash[:web_design] = [[web_design_reponsivo]]
+
+puts hash.values.flatten
+
+
 
 =begin
 # puts teste_e_design.preco
