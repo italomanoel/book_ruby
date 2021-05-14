@@ -33,6 +33,6 @@ _________________________________/
 Se pode declarar um array utilizando o *%w{}* e *%W{String #{var}}* que permite a interpolação de valores nas palavras no array. Assim não o espaços tomam lugar da vírgula na separação, na declaração comum *exemplo = [1,2,3]*, *exemplo_com = %w{olá mundo}*, **exemplo_com_interpolacao = %W{olá #{}}**.
 
 page 66 4.4 hash
-
+a
 
 
